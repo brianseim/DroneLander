@@ -108,6 +108,14 @@
     <None Include="DroneLander.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\DroneLander_150x150.scale-100.png" />
+    <Content Include="Assets\DroneLander_310x150.scale-100.png" />
+    <Content Include="Assets\DroneLander_310x310.scale-100.png" />
+    <Content Include="Assets\DroneLander_44x44.scale-100.png" />
+    <Content Include="Assets\DroneLander_71x71.scale-100.png" />
+    <Content Include="Assets\DroneLander_splash.scale-100.png" />
+    <Content Include="Assets\DroneLander_store.scale-100.png" />
+    <Content Include="drone_lander_back.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
