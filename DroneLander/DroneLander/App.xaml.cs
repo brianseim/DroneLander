@@ -9,11 +9,12 @@ namespace DroneLander
 {
     public partial class App : Application
     {
+        public static MainViewModel ViewModel { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new DroneLander.MainPage();
+            MainPage = new NavigationPage(new DroneLander.MainPage());
         }
 
         protected override void OnStart()
