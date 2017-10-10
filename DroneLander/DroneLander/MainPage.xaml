@@ -12,19 +12,19 @@
         </Grid.RowDefinitions>
 
         <StackLayout Padding="40,30">
-            <Label Style="{DynamicResource CaptionLabelStyle}" Text="Altitude (meters)" />
+            <Label Style="{DynamicResource CaptionLabelStyle}" Text="ALTITUDE (meters)" />
             <Label Style="{DynamicResource DisplayLabelStyle}" Text="{Binding Altitude, Converter={StaticResource DecimalDisplayConverter}}" local:DigitalFontEffect.FontFileName="Digital" />
 
-            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="Descent Rate (meters per second)" />
+            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="DESCENT RATE (meters per second)" />
             <Label Style="{DynamicResource DisplayLabelStyle}" Text="{Binding DescentRate, Converter={StaticResource DecimalDisplayConverter}}" local:DigitalFontEffect.FontFileName="Digital"/>
 
-            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="Thrust (Newtons)" />
+            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="THRUST (Newtons)" />
             <Label Style="{DynamicResource DisplayLabelStyle}" Text="{Binding Thrust, Converter={StaticResource DecimalDisplayConverter}}" local:DigitalFontEffect.FontFileName="Digital"/>
 
-            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="Fuel Remaining" />
+            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="FUEL REMAINING" />
             <ProgressBar Progress="{Binding FuelRemaining}" />
 
-            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="Throttle"></Label>
+            <Label Margin="0,16,0,0" Style="{DynamicResource CaptionLabelStyle}" Text="THROTTLE"></Label>
             <Slider Minimum="0" Maximum="100" Value="{Binding Throttle, Mode=TwoWay}" />
         </StackLayout>
 
