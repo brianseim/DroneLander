@@ -91,12 +91,20 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\FuelControlRenderer.cs" />
+    <Compile Include="Renderers\ThrottleControlRenderer.cs" />
+    <Compile Include="Services\Page1.xaml.cs">
+      <DependentUpon>AudioServices.cs</DependentUpon>
+    </Compile>
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <BundleResource Include="Resources\Fonts\Digital.ttf" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -139,6 +147,20 @@
       <Project>{4d88655c-960e-4081-bd9c-d18842804bc4}</Project>
       <Name>DroneLander</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\throttle_thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drone_lander_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\AudioServices.cs">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sounds\engine.m4a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
